@@ -7,3 +7,4 @@ compatibility with external plugins for vim's pandoc support plugins.
 * snipsmate
 * Ultisnips
 * unite.vim
+* supertab
