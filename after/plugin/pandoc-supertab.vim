@@ -4,7 +4,7 @@ if exists("g:SuperTabDefaultCompletionType")
 	if exists('g:SuperTabCompletionContexts')
 	    if exists('g:pantondoc_enabled_modules')
 		let b:SuperTabCompletionContexts =
-				\ ['pantondoc_completion#Pantondoc_Complete'] + g:SuperTabCompletionContexts
+				\ ['pantondoc#completion#Complete'] + g:SuperTabCompletionContexts
 	    else
 		let b:SuperTabCompletionContexts =
 				\ ['pandoc#PandocContext'] + g:SuperTabCompletionContexts
