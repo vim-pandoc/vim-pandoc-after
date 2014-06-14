@@ -1,20 +1,21 @@
 function! pandoc#after#supertab#Init()
     if exists("g:SuperTabDefaultCompletionType")
-	    call SuperTabSetDefaultCompletionType("context")
+	call SuperTabSetDefaultCompletionType("context")
 
-	    if exists('g:SuperTabCompletionContexts')
-		if exists('g:pantondoc_enabled_modules')
-		    let b:SuperTabCompletionContexts =
-				    \ ['pantondoc#completion#Complete'] + g:SuperTabCompletionContexts
-		else
-		    let b:SuperTabCompletionContexts =
-				    \ ['pandoc#PandocContext'] + g:SuperTabCompletionContexts
-		endif
+	if exists('g:SuperTabCompletionContexts')
+	    if exists('g:pandoc#modules#enabled') && index(g:pandoc#modules#enabled, "completion") != -1
+		let b:SuperTabCompletionContexts =
+			    \ ['pandoc#after#supertab#Context'] + g:SuperTabCompletionContexts
 	    endif
+	endif
 
-	    " disable supertab completions after bullets and numbered list
-	    " items (since one commonly types something like `+<tab>` to
-	    " create a list.)
-	    let b:SuperTabNoCompleteAfter = ['\s', '^\s*\(-\|\*\|+\|>\|:\)', '^\s*(\=\d\+\(\.\=\|)\=\)']
+	" disable supertab completions after bullets and numbered list
+	" items (since one commonly types something like `+<tab>` to
+	" create a list.)
+	let b:SuperTabNoCompleteAfter = ['\s', '^\s*\(-\|\*\|+\|>\|:\)', '^\s*(\=\d\+\(\.\=\|)\=\)']
     endif
+endfunction
+
+function! pandoc#after#supertab#Context()
+    return "\<c-x>\<c-o>"
 endfunction
