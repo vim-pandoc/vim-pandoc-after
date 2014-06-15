@@ -1,13 +1,10 @@
 function! pandoc#after#Init()
-    if exists("b:pandoc_after_loaded") && b:pandoc_after_loaded == 1
-	finish
+    if !exists("b:pandoc_after_loaded") || b:pandoc_after_loaded != 1
+	for module in g:pandoc#after#modules#enabled
+	    exe "call pandoc#after#".module."#Init()"
+	endfor
+	let b:pandoc_after_loaded = 1
     endif
-
-    for module in g:pandoc#after#modules#enabled
-	exe "call pandoc#after#".module."#Init()"
-    endfor
-
-    let b:pandoc_after_loaded = 1
 endfunction
 
 function! pandoc#after#AppendRTP(path)
