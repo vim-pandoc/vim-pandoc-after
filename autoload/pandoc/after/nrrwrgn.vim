@@ -6,9 +6,14 @@ endfunction
 
 function! pandoc#after#nrrwrgn#NarrowCodeblock()
     if markdown#codeblocks#InsideCodeblock() == 1
-	let ft_command = 'set filetype='.markdown#codeblocks#Lang()
+	if exists("b:nrrw_aucmd_create")
+	    let old_hook = b:nrrw_aucmd_create
+	endif
+	let b:nrrw_aucmd_create = 'set ft='.markdown#codeblocks#Lang()
 	let range = markdown#codeblocks#BodyRange()
 	exe range[0].','.range[1].'NR'
-	exe ft_command
+	if exists("old_hook") 
+	    let b:nrrw_aucmd_create = old_hook
+	endif
     endif
 endfunction
