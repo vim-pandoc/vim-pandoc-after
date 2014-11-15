@@ -9,7 +9,8 @@ Handles vim-pandoc's integration with third-party plugins.
 * [vim-snipsmate](https://github.com/garbas/vim-snipmate)
 * [unite.vim](https://github.com/Shougo/unite.vim)
 * [supertab](https://github.com/ervandew/supertab)
-* [nrrwrgn](https://github.com/chrisbra/NrrwRgn)
+* [nrrwrgn](https://github.com/chrisbra/NrrwRgn) 
+* [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode/)
 
 ## Configuration
 
