@@ -1,0 +1,26 @@
+*vim-pandoc-after*
+
+Third-party plugin integration for vim-pandoc.
+
+- PLUGINS SUPPORTED                                *vim-pandoc-after-modules*
+
+* ultisnips (https://github.com/SirVer/ultisnips)
+* neosnippet (https://github.com/Shougo/neosnippet.vim) 
+* vim-snipsmate (https://github.com/garbas/vim-snipmate) 
+* unite.vim (https://github.com/Shougo/unite.vim) 
+* supertab (https://github.com/ervandew/supertab) 
+* nrrwrgn (https://github.com/chrisbra/NrrwRgn)  
+* vim-table-mode (https://github.com/dhruvasagar/vim-table-mode/) 
+
+Please consult the files in `autoload/pandoc/after` to know what each
+module provides.
+
+- CONFIGURATION                              *g:pandoc#after#modules#enabled*
+
+By default, vim-pandoc-after does nothing. To enable plugins' support, you
+must set the variable `g:pandoc#after#modules#enabled`. For example, to enable
+NrrwRgn and ultisnips support, add the following to your vimrc:
+
+    let g:pandoc#after#modules#enabled = ["nrrwrgn", "ultisnips"]
+
+The valid values are the names of the files in `autoload/pandoc/after/`.

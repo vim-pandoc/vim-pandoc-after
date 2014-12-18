@@ -4,13 +4,15 @@ Handles vim-pandoc's integration with third-party plugins.
 
 ## plugins supported
 
-* [ultisnips](https://github.com/SirVer/ultisnips)
-* [neosnippet](https://github.com/Shougo/neosnippet.vim)
-* [vim-snipsmate](https://github.com/garbas/vim-snipmate)
-* [unite.vim](https://github.com/Shougo/unite.vim)
-* [supertab](https://github.com/ervandew/supertab)
-* [nrrwrgn](https://github.com/chrisbra/NrrwRgn) 
-* [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode/)
+(The names used to enable the corresponding modules [see below] are in italics)
+
+* [ultisnips](https://github.com/SirVer/ultisnips) - *ultisnips*
+* [neosnippet](https://github.com/Shougo/neosnippet.vim) - *neosnippets*
+* [vim-snipsmate](https://github.com/garbas/vim-snipmate) - *snipmate*
+* [unite.vim](https://github.com/Shougo/unite.vim) - *unite*
+* [supertab](https://github.com/ervandew/supertab) - *supertab*
+* [nrrwrgn](https://github.com/chrisbra/NrrwRgn) - *nrrwrgn* 
+* [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode/) - *tablemode*
 
 ## Configuration
 
