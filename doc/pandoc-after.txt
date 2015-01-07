@@ -10,7 +10,8 @@ Third-party plugin integration for vim-pandoc.
 * unite.vim (https://github.com/Shougo/unite.vim) 
 * supertab (https://github.com/ervandew/supertab) 
 * nrrwrgn (https://github.com/chrisbra/NrrwRgn)  
-* vim-table-mode (https://github.com/dhruvasagar/vim-table-mode/) 
+* vim-table-mode (https://github.com/dhruvasagar/vim-table-mode/)
+* vimcompletesme (https://github.com/ajh17/VimCompletesMe)
 
 Please consult the files in `autoload/pandoc/after` to know what each
 module provides.
