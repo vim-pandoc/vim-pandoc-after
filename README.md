@@ -19,9 +19,10 @@ Handles vim-pandoc's integration with third-party plugins.
 
 ## Configuration
 
-By default, vim-pandoc-after does nothing. To enable plugins' support, you must
-set the variable `g:pandoc#after#modules#enabled`. For example, to enable
-NrrwRgn and ultisnips support, add the following to your vimrc:
+By default, vim-pandoc-after only enables the "goyo" module, because it solves
+a performance issue with the interaction of vim-pandoc's folding module and
+Goyo. To enable other plugins' support, you must set the variable
+`g:pandoc#after#modules#enabled`. For example, to enable NrrwRgn and ultisnips
+support, add the following to your vimrc:
 
     let g:pandoc#after#modules#enabled = ["nrrwrgn", "ultisnips"]
-

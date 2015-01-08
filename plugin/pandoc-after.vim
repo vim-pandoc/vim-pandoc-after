@@ -11,9 +11,12 @@ if !exists("g:pandoc#filetypes#handled")
 endif
 
 " Defaults: {{{1
-" what plugins to integrate with. by default, none.
+" what plugins to integrate with. 
+" "goyo" is enabled by default, because it solves a performance issue.
 if !exists("g:pandoc#after#modules#enabled")
-    let g:pandoc#after#modules#enabled = []
+    let g:pandoc#after#modules#enabled = ["goyo"]
+else
+    let g:pandoc#after#modules#enabled += ["goyo"]
 endif "}}}1
 
 " Globals: {{{1
