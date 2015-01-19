@@ -14,14 +14,10 @@ Handles vim-pandoc's integration with third-party plugins.
 * [nrrwrgn](https://github.com/chrisbra/NrrwRgn) - *nrrwrgn* 
 * [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode/) - *tablemode*
 * [vimcompletesme](https://github.com/ajh17/VimCompletesMe) - *vimcompletesme*
-* [goyo.vim](https://github.com/junegunn/goyo.vim) - *goyo*
-
 
 ## Configuration
 
-By default, vim-pandoc-after only enables the "goyo" module, because it solves
-a performance issue with the interaction of vim-pandoc's folding module and
-Goyo. To enable other plugins' support, you must set the variable
+To enable plugins' support, you must set the variable
 `g:pandoc#after#modules#enabled`. For example, to enable NrrwRgn and ultisnips
 support, add the following to your vimrc:
 

@@ -12,7 +12,6 @@ Third-party plugin integration for vim-pandoc.
 * nrrwrgn (https://github.com/chrisbra/NrrwRgn)  
 * vim-table-mode (https://github.com/dhruvasagar/vim-table-mode/)
 * vimcompletesme (https://github.com/ajh17/VimCompletesMe)
-* goyo.vim (https://github.com/junegunn/goyo.vim)
 
 Please consult the files in `autoload/pandoc/after` to know what each
 module provides.
@@ -28,6 +27,4 @@ support, add the following to your vimrc:
     let g:pandoc#after#modules#enabled = ["nrrwrgn", "ultisnips"]
 
 The valid values are the names of the files in `autoload/pandoc/after/`.
-
-Note that "goyo" will be appended to this list in every case.
 

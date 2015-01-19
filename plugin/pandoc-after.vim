@@ -14,9 +14,7 @@ endif
 " what plugins to integrate with. 
 " "goyo" is enabled by default, because it solves a performance issue.
 if !exists("g:pandoc#after#modules#enabled")
-    let g:pandoc#after#modules#enabled = ["goyo"]
-else
-    let g:pandoc#after#modules#enabled += ["goyo"]
+    let g:pandoc#after#modules#enabled = []
 endif "}}}1
 
 " Globals: {{{1
