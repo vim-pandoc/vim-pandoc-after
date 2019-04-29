@@ -14,6 +14,7 @@ Handles vim-pandoc's integration with third-party plugins.
 * [nrrwrgn](https://github.com/chrisbra/NrrwRgn) - *nrrwrgn*
 * [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode/) - *tablemode*
 * [vimcompletesme](https://github.com/ajh17/VimCompletesMe) - *vimcompletesme*
+* [FastFold](https://github.com/Konfekt/Fastfold) - *fastfold*
 
 ## Configuration
 
